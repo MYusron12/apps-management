@@ -25,7 +25,7 @@
               <td><?= $m['menu']; ?></td>
               <td>
                 <a href="" class="badge badge-success">edit</a>
-                <a href="<?= base_url('menu/hapusMenu/') . $m['id']; ?>" class="badge badge-danger" onclick="confirm('yakin akan dihapus?')">detail</a>
+                <a href="<?= base_url('menu/hapusMenu/') . $m['id']; ?>" class="badge badge-danger" onclick="return confirm('yakin akan dihapus?')">delete</a>
               </td>
             </tr>
           <?php endforeach; ?>
